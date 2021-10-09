@@ -6,7 +6,7 @@ else
     return 1
 end
 
-local res = http.get("http://82.176.154.181:6120/" .. filename)
+local res = http.get(SERVER_IP .. filename)
 
 if res.getResponseCode() == 404 then
     print("TurtleTXT could not find " .. filename .. ".lua")
